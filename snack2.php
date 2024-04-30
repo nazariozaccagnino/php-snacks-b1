@@ -3,13 +3,13 @@ $message='';
 //$username='';
 //$mail='';
 //$age='';
-if(isset($_GET['username']) && isset($_GET['mail'])&&isset($_GET['age']))
+if(isset($_GET['username']) && isset($_GET['mail'])&&isset($_GET['age'])){
     if(strlen($_GET['username']) > 3 && str_contains($_GET['mail'], '.') && str_contains($_GET['mail'], '@') && is_numeric($_GET['age'])){
         $message = 'Accesso riuscito';
     } else{
         $message = 'Accesso negato';
     }
-
+}
 
 ?>
 
