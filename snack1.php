@@ -18,6 +18,18 @@ $matches = [
         'homepts'=>'91',
         'awaypts'=>'86',
     ],
+    [
+        'home'=>'Reggiana',
+        'away'=>'Basket Napoli',
+        'homepts'=>'88',
+        'awaypts'=>'74',
+    ],
+    [
+        'home'=>'Scafati',
+        'away'=>'Sassari',
+        'homepts'=>'74',
+        'awaypts'=>'99',
+    ],
 ]
 
 
@@ -37,14 +49,12 @@ $matches = [
 </head>
 
 <body>
-    <h1>Risultati Serie A - Giornata 29 - 28/04/2024</h1>
+    <h1>Risultati Basket Serie A - Giornata 29 - 28/04/2024</h1>
     <div>
-        <?php 
-            foreach ($matches as $match) {
-                
-            }
+        <?php foreach ($matches as $match) {?>
+                <div><?php echo $match['home'].' - '.$match['away'].' | '.$match['homepts'].' - '.$match['awaypts']?></div>
+        <?php } ?>
 
-        ?>
     </div>
 </body>
 </html>
