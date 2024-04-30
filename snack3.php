@@ -62,12 +62,12 @@ $posts = [
                 <?php foreach($posts as $key => $post){?>
 
                     <div class="col">
-                        <?php echo $key?>
+                        <div class="fw-bold"><?php echo $key?></div>
                     <?php foreach($post as $text) {?>
 
-                        <div><?php echo $text['title']?></div>
-                        <div><?php echo $text['author']?></div>
-                        <div><?php echo $text['text']?></div>
+                        <div class="my-2 text-danger"><?php echo $text['title']?></div>
+                        <div class="my-2 fst-italic"><?php echo $text['author']?></div>
+                        <div class="my-2 border"><?php echo $text['text']?></div>
 
                         <?php }?>
                 </div>
